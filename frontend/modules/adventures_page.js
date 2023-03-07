@@ -35,7 +35,7 @@ function addAdventureToDOM(adventures) {
   let card = document.createElement("div");
   card.setAttribute("class","col-12 col-sm-6 col-lg-3 mb-4");
   card.innerHTML= `
-    <a href="pages/adventures/detail/?adventure=${element.id}" id=${element.id}>
+    <a href="detail/?adventure=${element.id}" id=${element.id}>
      <div class="card activity-card">
      <div class="category-banner">${element.category} </div>
       <img src=${element.image} class="activity-card-image" />
@@ -80,7 +80,6 @@ return result;
   // 1. Filter adventures based on their Category and return filtered list
 
 }
-
 
 // filters object looks like this filters = { duration: "", category: [] };
 
